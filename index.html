@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/money.png" type="image/x-icon" />
+    <title>tip calculator</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/ticket.png" class="logo" alt="" />
+      <input type="checkbox" id="check" />
+      <label for="check" class="switch">
+        <img src="./assets/sun.svg" alt="" />
+        <img src="./assets/moon.svg" alt="" />
+        <span class="slider"></span>
+      </label>
+    </header>
+    <h1>Tip Calculator</h1>
+    <main>
+      <div>
+        <label for="bill">
+          <span>Value</span>
+          <input type="number" id="bill" placeholder="$ 00,00" />
+        </label>
+
+        <label for="tip">
+          <span>Tip <span class="percentage">(in %)</span></span>
+          <input type="number" id="tip" placeholder="% 0" />
+        </label>
+
+        <input type="text" disabled class="disabled" placeholder="$ 00,00" />
+
+        <p class="gorjeta"></p>
+        <button id="button">Calculate</button>
+      </div>
+      <script src="main.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+}
+
+body {
+  padding: 0 30px;
+  transition: all ease-in-out 0.2s;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#check {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  background-color: #30609e;
+  width: 80px;
+  height: 40px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.switch img {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+#check:checked ~ .switch .slider {
+  transform: translateX(40px);
+}
+
+.logo {
+  margin-top: 30px;
+}
+
+h1 {
+  margin: 50px 0;
+  text-align: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+label span {
+  padding-bottom: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+label input {
+  padding: 18px 12px;
+  font-size: 200px;
+  outline: none;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all ease 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+label input:focus {
+  border: 1px solid #023e8a;
+}
+
+label span .percentage {
+  color: #959595;
+}
+
+label input::placeholder {
+  opacity: 0.7;
+}
+
+#button {
+  margin-top: 50px;
+  width: 100%;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background-color: #5e60ce;
+  color: #fff;
+  border-radius: 4px;
+  transition: all ease 0.2s;
+}
+
+#button:hover {
+  background-color: #023e8a;
+}
+
+.disabled {
+  padding: 18px 12px;
+  border: none;
+  width: 100%;
+  margin: 18px 0;
+  border-radius: 4px;
+  background-color: #e1e1e1;
+  font-size: 18px;
+}
+
+.gorjeta {
+  text-align: end;
+}
+
+body.dark {
+  background-color: #121212;
+}
+
+@media (min-width: 768px) {
+  input,
+  button {
+    min-width: 750px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 340px) {
+  h1 {
+    font-size: 30px;
+  }
+}
