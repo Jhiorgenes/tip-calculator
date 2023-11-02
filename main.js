@@ -16,7 +16,7 @@ const calculateTip = () => {
     const result = (tip * bill) / 100
     const total = parseFloat(bill) + parseFloat(result)
     disabled.value = `R$ ${total.toFixed(2)}`
-    gorjeta.textContent = `Gorjeta: R$ ${result.toFixed(2)} `
+    gorjeta.textContent = `Tip: R$ ${result.toFixed(2)} `
   }
 }
 
